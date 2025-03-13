@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const SqlitePage = () => {
     return (
-        <DocumentationLayout>
+        <DocumentationLayout title="FOCCA ORM Documentation for SQLite">
             <div className="prose prose-green max-w-none">
                 <h1 className="text-3xl font-bold mb-6 text-tree">
                     FOCCA ORM Documentation for SQLite

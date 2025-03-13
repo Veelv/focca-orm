@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const MongoPage = () => {
     return (
-        <DocumentationLayout>
+        <DocumentationLayout title="FOCCA ORM Documentation for MongoDB">
             <div className="prose prose-green max-w-none">
                 <h1 className="text-3xl font-bold mb-6 text-tree">
                     FOCCA ORM Documentation for MongoDB
