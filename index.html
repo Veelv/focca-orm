@@ -5,20 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focca</title>
-
-    <script type="text/javascript">
-      // Verifica se foi redirecionado e restaura o caminho original
-      (function() {
-        var redirect = new URLSearchParams(window.location.search).get('redirect');
-        if (redirect) {
-          var query = new URLSearchParams(window.location.search).get('query') || '';
-          var hash = new URLSearchParams(window.location.search).get('hash') || '';
-          
-          var url = '/' + redirect + (query ? '?' + query : '') + (hash ? '#' + hash : '');
-          history.replaceState(null, null, url);
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>

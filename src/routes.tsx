@@ -73,7 +73,7 @@ const routes = createBrowserRouter(
       element: <UtilsPage />,
     },
   ],
-  { basename: "/focca-orm" }
+  { basename: "/focca-orm/" }
 );
 
 export default routes;
