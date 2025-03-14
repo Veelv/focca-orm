@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import MenuItemComponent, { MenuItem } from './MenuItemComponent';
+import logoFocca from "../assets/focca.svg";
 
 type SidebarProps = {
   menuItems: MenuItem[];
@@ -27,7 +28,7 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItems, isOpen }) => {
           <div className="flex justify-center mb-4">
             <Link to="/" className="flex">
               <img
-                src="/focca.svg"
+                src={logoFocca}
                 alt="FOCCA Logo"
                 className="h-8 text-blue-500"
               />

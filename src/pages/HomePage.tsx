@@ -12,6 +12,10 @@ import {
 import Footer from "../components/Footer";
 import Seo from "../components/Seo";
 
+import foccaLogo from "../assets/focca.svg";
+import foccaSchemaVideo from "../assets/SchemaExample.mp4";
+import patternGrid from "../assets/pattern-grid.svg";
+
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -37,7 +41,7 @@ const HomePage = () => {
         <div className="container mx-auto px-6 flex justify-center items-center">
           <div className="flex items-center">
             <img
-              src="/focca.svg"
+              src={foccaLogo}
               alt="FOCCA Logo"
               className="h-10 text-blue-500"
             />
@@ -51,7 +55,7 @@ const HomePage = () => {
           <div
             className="absolute inset-0 opacity-20"
             style={{
-              backgroundImage: 'url("/pattern-grid.svg")',
+              backgroundImage: `url(${patternGrid})`,
               backgroundSize: "50px 50px",
               transform: "rotate(-5deg) scale(1.2)",
             }}
@@ -185,7 +189,7 @@ const HomePage = () => {
             >
               <div className="rounded-xl overflow-hidden shadow-2xl border border-gray-200">
                 <video className="w-full" autoPlay loop muted playsInline>
-                  <source src="/SchemaExample.mp4" type="video/mp4" />
+                  <source src={foccaSchemaVideo} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

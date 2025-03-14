@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import React from "react";
 import { Link } from "react-router";
+import logoFocca from "../assets/focca.svg";
 
 type HeaderProps = {
   toggleSidebar: () => void;
@@ -13,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
         <div className="flex-grow flex justify-center">
           <Link to="/" className="flex items-center">
             <img
-              src="/focca.svg"
+              src={logoFocca}
               alt="FOCCA Logo"
               className="h-8 text-blue-500"
             />
