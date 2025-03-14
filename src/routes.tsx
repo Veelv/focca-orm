@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import HomePage from "./pages/HomePage";
 import DocPage from "./pages/DocPage";
 import GettingStartePage from "./pages/GettingStartePage";
@@ -14,7 +14,7 @@ import QueryBuilderPage from "./pages/ORM/QueryBuilderPage";
 import EntityPage from "./pages/ORM/EntityPage";
 import UtilsPage from "./pages/UtilsPage";
 
-const routes = createBrowserRouter(
+const routes = createHashRouter(
   [
     {
       path: "/",
@@ -72,8 +72,7 @@ const routes = createBrowserRouter(
       path: "/docs/utils",
       element: <UtilsPage />,
     },
-  ],
-  { basename: "/focca-orm" }
+  ]
 );
 
 export default routes;
